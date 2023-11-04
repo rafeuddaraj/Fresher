@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Fresher",
+    "description": "This Extensions Use to reload on Tabs.",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "app.html",
+        "default_icon": "./altrazen.png"
+    },
+    "permission":"activeTab",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["script.js"]
+        }
+      ]
+}
